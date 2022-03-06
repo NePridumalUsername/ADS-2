@@ -4,10 +4,11 @@
 
 
 double pown(double value, uint16_t n) {
-uint16_t i;
+uint64_t i;
 double x = 1;
-for (i = 1; i <= n; i++);
+for (i = 1; i <= n; i++) {
 x *= value;
+}
 return x;
 }
 
